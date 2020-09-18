@@ -1,6 +1,16 @@
 const { db } = require('../database/connection')
 
 class CursoController {
+
+	async index(req, res) {
+		const curso = await db('cursos')
+			.join('turmas', 'cursos.id', '=', 'turmas.curso_id')
+			.join('blocos', 'turmas.id', '=', 'blocos.turma_id')
+			.join('disciplinas', 'blocos.id', '=', 'disciplinas.bloco_id')
+
+		res.json(curso)
+	}
+
 	async create(req, res) {
 		try {
 			const { 
@@ -46,6 +56,15 @@ class CursoController {
 		} catch(e) {
 			console.log(e)
 		}
+	}
+
+	async delete(req, res) {
+		const { id } = req.params
+		await db('cursos')
+			.where('id', '=', id)
+			.del()
+
+		res.status(200).json({message: "deleted"})
 	}
 }
 

@@ -9,22 +9,10 @@ app.use(express.json())
 
 const routes = express.Router()
 
-
-/*const { 
-
-	connectionsRoutes, 
-	classesRoutes, 
-	accountsRoutes,
-	loginsRoutes 
-
-} = require('./routes/index')
-
-app.use(connectionsRoutes)
-app.use(classesRoutes)
-app.use(accountsRoutes)
-app.use(loginsRoutes)*/
-
 routes.post('/create-curso', cursoController.create) 
+routes.get('/', cursoController.index) 
+routes.delete('/:id', cursoController.delete) 
+
 
 app.use(routes)
 
