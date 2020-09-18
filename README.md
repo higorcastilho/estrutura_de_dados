@@ -9,11 +9,11 @@
 <p>Com uma ferramente de teste de Rest API faça uma requisição do tipo POST para http://localhost:3333/create-curso com o corpo da mensagem nesse molde:</p>
 
 {
-	"nome_curso": "",
-	"nome_turma": "",
-	"classe": "",
-	"turno": "",
-	"nome_disciplina": "",
-	"nome_bloco": ""
+	<p>"nome_curso": "Graduação em ADS",</p>
+	"nome_turma": "Turma 01",
+	"classe": "Classe 01",
+	"turno": "Noite",
+	"nome_bloco": "Desenvolvimento Front-End",
+	"nome_disciplina": "Interfaces com HTML, CSS E JavaScript"
 }
 
