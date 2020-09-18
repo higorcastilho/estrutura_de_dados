@@ -10,10 +10,10 @@
 
 {
 	<p>"nome_curso": "Graduação em ADS",</p>
-	"nome_turma": "Turma 01",
-	"classe": "Classe 01",
-	"turno": "Noite",
-	"nome_bloco": "Desenvolvimento Front-End",
-	"nome_disciplina": "Interfaces com HTML, CSS E JavaScript"
+	<p>"nome_turma": "Turma 01",</p>
+	<p>"classe": "Classe 01",</p>
+	<p>"turno": "Noite",</p>
+	<p>"nome_bloco": "Desenvolvimento Front-End",</p>
+	<p>"nome_disciplina": "Interfaces com HTML, CSS E JavaScript"</p>
 }
 
