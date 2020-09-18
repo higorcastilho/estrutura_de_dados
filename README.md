@@ -1,6 +1,8 @@
 <h3 align="center">Como executar</h3>
+
 - Clone o repositório
 - Execute "npm install"
+- Delete o arquivo database.sqlite que está dentro da pasta database
 - Execute "npm run knex:migrate"
 - Execute "npm start"
 
