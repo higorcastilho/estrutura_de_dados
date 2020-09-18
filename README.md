@@ -17,3 +17,7 @@
 	<p>"nome_disciplina": "Interfaces com HTML, CSS E JavaScript"</p>
 }
 
+<h4 align="center">Listar Curso com turma, bloco e disciplina: </h4>
+
+<p>Com uma ferramente de teste de Rest API faça uma requisição do tipo GET para http://localhost:3333/.
+
